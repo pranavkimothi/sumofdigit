@@ -1,0 +1,23 @@
+// My 8th program with My Captain Aviral Sir
+
+#include<stdio.h>
+int sum(int n,int s)
+{
+     if(n>10)
+    {
+     int k;
+     k=n%10;
+     s=s+k;
+     sum(n/10,s);
+    }
+     else return (s+n);
+}
+int main()
+{
+    int n;
+    printf("enter the number: ");
+    scanf("%d",&n);
+    printf("The sum of the digits of this number is %d",sum(n,0));
+
+return 0;
+}
